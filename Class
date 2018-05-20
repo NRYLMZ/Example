@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+class A
+{
+    public :
+       A(){cout<<" N ";}            
+};
+class B : public A
+{
+    public :
+       B(){cout<< " R ";}     
+};
+class C : public A
+{
+    public :
+       C(){ cout<<" Z"; }
+};
+
+class D : public B, public C
+{
+    public :
+       D(){cout<<" !!! "<<endl<<endl;}  
+};
+int main()
+{
+    D d;
+    system("pause");
+    return 0;    
+}
