@@ -1,0 +1,30 @@
+//Nurullah YILMAZ 08096//
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+basla:    
+int i,sayi1,f,sayi2,a=0,b=0;
+
+printf("iki tane sayi giriniz");
+scanf("%d",&sayi1);
+scanf("%d",&sayi2);
+          
+for(i=sayi1+1;i<sayi2;i++)
+    { if(i%2==0)
+       { a++; }
+       else b++;
+       }
+printf("tek sayi miktari=%d \n",b);
+printf("cift sayi miktari=%d \n",a);
+system("pause");
+goto basla;
+return 0;
+}
+
+
+
+iki tane sayi giriniz1 30
+tek sayi miktari=14
+cift sayi miktari=14
