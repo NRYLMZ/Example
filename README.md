@@ -1,1 +1,1 @@
-# Zincir-
+# Zincir içerisinde arama 
