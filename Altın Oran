@@ -1,0 +1,7 @@
+void Main(string[] args)
+        {
+            double a;
+            a = (1 + Math.Sqrt(5)) / 2;
+            Console.WriteLine("Altın oran:{0}",a);
+            Console.ReadKey();            
+        }
