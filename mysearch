@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+FILE*myfile;
+int i,a,c,count,k;
+char s[100],t,file[100];
+main(int argc,char *argv[])
+{if(argc>0)
+{printf("count of argument:%d\n",argc);
+ for(i=1;i<argc;i++)
+  printf("%s \n",argv[i]);
+}
+printf("lutfen kelimeyi giriniz\n");
+gets(s);
+/*printf("txt dosyasini yazin");
+scanf("%s",file);*/
+strcpy(file,argv[1]);
+myfile=fopen(file,"r");
+while(!feof(myfile))
+{
+                                k++;
+                               if(fgetc(myfile)==s[c])                                                                  
+                                      c++;
+                                     else{c=0;k=0;}
+                                      
+                                       if(c==strlen(s))
+                                        count++;
+                                       
+                                        }
+                                        
+                                          
+                                        printf("%d",count);
+                                        system("pause");
+                                        return 0;
+                                        }
