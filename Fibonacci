@@ -1,0 +1,17 @@
+void Main(string[] args)
+        {
+            int a = 0, b = 1, c=1,c2=1,n;
+
+            Console.Write("n:");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("0 1 ");
+            for (int i = 3; i <= n; i++)
+            {
+                c = a + b;
+                Console.WriteLine("{0} {1}", c,(double)c/c2);
+                a = b;
+                b = c;
+                c2 = c;
+            }
+            Console.ReadKey();
+        }
